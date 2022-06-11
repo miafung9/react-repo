@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+//jsx 
 function App() {
   return (
     <div className="App">
@@ -21,5 +23,13 @@ function App() {
     </div>
   );
 }
+//Class name in camelCase to set up name
+//Class is reserved keyword - react may allow us to use it
+//className attribute to apply CSS style
+
+//<label htmlFor = “name”>
+//<input id = “name”/>
+//</label>
+
 
 export default App;
