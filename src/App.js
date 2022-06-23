@@ -1,31 +1,35 @@
 import {useState} from 'react'
 import logo from './logo.svg';
 import './App.css';
-import Link from './components/Link'
-import LinkContainer from './components/LinkContainer';
-
+import Accordion from "./components/pages/Accordion/index"
+import LinkContainer from './components/navigation/navbar/LinkContainer';
+import Counter from './components/counter/Counter';
+import User from './components/user/User';
 //jsx 
 function App() {
-  const [hideLink, setHideLink] = useState(false)
+  // const [hideLink, setHideLink] = useState(false)
 
- const hideLinkHandler = () => {
-  setHideLink(!hideLink)
+//  const hideLinkHandler = () => {
+//   setHideLink(!hideLink)
 
- }
+ 
  
   return (
     <div className="App">
-      <header className="App-header">
+      <Accordion/>
+      <Counter/>
+      <User />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+         
         </p>
         { !hideLink ? <LinkContainer/> : null}
         <br />
         <button onClick = {hideLinkHandler}>{hideLink ? "Hide Links" : "Show Links"}</button>
-      </header>
+      </header> */}
     </div>
   );
-}
+    }
 
 export default App;
