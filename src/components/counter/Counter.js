@@ -1,6 +1,6 @@
 import {useState} from 'react'
-
-function Counter() 
+import React from 'react'
+function Counter() {
     const [counter, setCounter] = useState(0)
 
     const incrementBy1 = () => {
@@ -8,8 +8,8 @@ function Counter()
     }
 
     const incrementBy15 = () => {
-        for (let i= 0; i <16; i++) {
-            setCounter(counter + 1) 
+        for (let i= 0; i <15; i++) {
+            setCounter(prevCounter => prevCounter + 1) 
         }
     }
 
@@ -31,6 +31,7 @@ function Counter()
         <br/>
         {myDemoComponent} 
     </div>
+}
     
 
 export default Counter

@@ -1,5 +1,7 @@
-// import { forwardRef } from "react"
+import { forwardRef } from "react"
 import {useState} from 'react'
+import React from "react"
+
 // const Accordion = () => {
     const data = [
         {
@@ -34,7 +36,7 @@ import {useState} from 'react'
         //     })
         //     }
             const toggler = (id,event) => {
-                setFaqs(faq.map (faq => faq.id === id ? {... faq, isOpen: ! faq.isOpen} : faq ))
+                setFaqs(faqs.map (faq => faq.id === id ? {... faq, isOpen: ! faq.isOpen} : faq ))
                 }
             
     // onClick={referenceFunction} => use this
@@ -42,12 +44,11 @@ import {useState} from 'react'
     // onClick={() => handlerFunction()} => or use this        
 
 
-            }
+            
             // console.log(faq.map(faq => {
             //     return faq.id * 10
             // }))
-        return (
-         <div className = "border border-red-500"> 
+        return ( <div className = "border border-red-500"> 
             <h1>Accordion Title</h1>
             <ul>
                 {faqs.map(faq => {
@@ -61,7 +62,7 @@ import {useState} from 'react'
                     )
                     })}
             </ul>
-    </div>)
+    </div>)}
         
 
 
