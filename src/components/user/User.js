@@ -17,7 +17,7 @@ function User() {
    //promises using Async/await- with arrow function
     const getUsers = async () => {
         try {
-            const result = await axios.get('https://jsonplaceholder.typicode.com/users')
+            const result = await axios.get(`https://jsonplaceholder.typicode.com/users`)
             setUsers(result.data)
             setLoading(false)
         }  catch (e){
@@ -38,26 +38,7 @@ function User() {
     }
 
 
-    // const getUser = async () => {
-    //     try {
-    //         const result = await axios.get("http://jsonplaceholder.typicode.com/user")
-    //      setUsers(result.data)
-    //      setLoading(false)
-    //     } catch (error) {
-    //         console.log(error)
-    //         setLoading(false)
-    //     }
-    // }
-    // async function getUsers(userId) {
-    //     try {
-    //         const result = await axios.get('http://jsonplaceholder.typicode.com/${user}')
-    //         setUsers(result.data)
-    //         setLoading(false)
-    //     } catch (error) {
-    //         console.log(error)
-    //         setLoading(false)
-    //     }
-    // }
+
     //writing Async/await with normal function
     // async function getUsersNormalFunc() {
     //     try {
@@ -77,7 +58,7 @@ function User() {
     useEffect (() => {
         getUsers()
     }, [])
-    
+
     // handle promises with .then() & .catch() methods
     //    const myPromise =  axios.get("http://jsonplaceholder.typicode.com/userId15")
     //     .then(result => setUsers(result.data))

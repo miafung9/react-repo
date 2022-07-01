@@ -1,6 +1,23 @@
-import  {Fragment} from "react"
+import  {Fragment, useState, useEffect} from "react"
 import React from "react"
-const SearchUser = ({userId,setUserId})  => {
+import axios from 'axios'
+
+const SearchUser = ({setUser})  => {
+    const [userId, setUserId]= useState(0)
+
+    async function getUser () {
+        try{
+            const result= await axios.get(`https://jsonplaceholder.typicode.com/${userId}`)
+            setUser(result.data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    useEffect(()=> {
+        getUser()
+    },[userId])
+
     return (
         <Fragment>
         <h1> Search User</h1>
@@ -11,4 +28,5 @@ const SearchUser = ({userId,setUserId})  => {
         </Fragment>
     )
 }
+
 export default SearchUser
