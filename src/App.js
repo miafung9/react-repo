@@ -8,6 +8,7 @@ import User from './components/user/User';
 import UserCard from './components/user/UserCard';
 import CreateAccount from './components/authorization/CreateAccount';
 import LoginV from './components/authorization/Login';
+import LoginM from './components/authorization/LoginM';
 // import PizzaContainer from './components/redux/pizza/PizzaContainer'
 // import UserCard from './components/user/UserCard';
 // import SearchUser from './components/user/SearchUser';
@@ -16,16 +17,17 @@ import LoginV from './components/authorization/Login';
 function App() {
 return (
   <div className="App">
-    <Accordion/>
+    {/* <Accordion/>
     <br/>
     <Counter/>
     <br/>
     <User />
-    <br/>
+    <br/> */}
     {/* <CreateAccount/> */}
     <br/>
     {/* `<PizzaContainer/>` */}
-    <LoginV/>
+    {/* <LoginV/> */}
+    <LoginM/>
   
   </div>
 );
