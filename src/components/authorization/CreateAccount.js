@@ -1,6 +1,7 @@
 import * as yup from 'yup'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
+import React from 'react'
 
 const schema = yup.object().shape({
     firstName: yup.string().min(3, "First name must be 3+ characters").required("First name is required."),
