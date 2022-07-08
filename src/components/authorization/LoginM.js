@@ -14,7 +14,7 @@ const inputFields = [
     {
         label: "Password",
         name: "password",
-        inputType: "passwork",
+        inputType: "password",
         placeholder: "Enter your password",
     },
 ]
