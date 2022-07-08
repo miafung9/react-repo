@@ -7,7 +7,7 @@ import Counter from './components/counter/Counter';
 import User from './components/user/User';
 import UserCard from './components/user/UserCard';
 import CreateAccount from './components/authorization/CreateAccount';
-import LoginV from './components/authorization/Login';
+import LoginVan from './components/authorization/Login';
 import LoginM from './components/authorization/LoginM';
 // import PizzaContainer from './components/redux/pizza/PizzaContainer'
 // import UserCard from './components/user/UserCard';
@@ -26,7 +26,7 @@ return (
     {/* <CreateAccount/> */}
     <br/>
     {/* `<PizzaContainer/>` */}
-    {/* <LoginV/> */}
+    {/* <LoginVan/> */}
     <LoginM/>
   
   </div>
